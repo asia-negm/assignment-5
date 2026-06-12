@@ -69,6 +69,7 @@ ul li a{
     
 }
 
+
 .contant{
     display: flex;
 }
@@ -334,6 +335,20 @@ align-items: center;
     border-left:5px solid var(--color-green-500);
 
 }
+.activity  .activity-footer{
+    
+    text-align: center;
+    margin: auto;
+    border-top: 1px solid var(--color-gray-200);
+    padding: 0.7rem;
+}
+
+.activity a{
+    text-decoration: none;
+    color:var(--color-blue-500) ;   
+    font-weight: 600;
+}
+
 
 .activity{
     grid-row: span 2 / span 2;
