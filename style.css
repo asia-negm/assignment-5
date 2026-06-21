@@ -115,7 +115,7 @@ ul li a{
 }
 
 .cantainer{
-   width: 90%;
+   width: 100%;
    background-color: var(--color-gray-100);
    padding: 2rem;
 
@@ -146,7 +146,6 @@ padding-bottom: 30px;
     background-color: var(--color-blue-600);
     padding: 15px;
     border-radius: 15px;
-    
 }
 
 .aside-logo i{
@@ -175,9 +174,13 @@ padding-bottom: 30px;
     /* margin-left: 10px; */
 }
 .aside-menu ul li{
-    padding: 10px;
+    padding: 10px 0;
     margin-bottom: 10px;
 }
+.spaceing-center{
+    padding: 0 10px;
+}
+
 .aside-menu .aside-home-card{
     background-color: var( --color-blue-100);
     border-radius: 10px;
@@ -213,14 +216,14 @@ padding-bottom: 30px;
 }
 .plane{
     background-color: var(--color-blue-100);
-    margin-left: 10px;
+    
 }
 .fa-paper-plane{
  color:var(--color-blue-600);
 }
 .plus{
   background-color: var(--color-green-100);
-      margin-left: 10px;
+      
 
 }
 
@@ -229,7 +232,7 @@ padding-bottom: 30px;
 }
 .receipt{
     background-color: var(--color-purple-100);
-        margin-left: 10px;
+        
 
 }
 .fa-receipt{
@@ -240,7 +243,7 @@ padding-bottom: 30px;
 }
 .chart{
     background-color: var(--color-orange-100);
-            margin-left: 10px;
+            
 } 
 /* //////////////////////////////////////// */
 
@@ -252,6 +255,10 @@ padding-bottom: 30px;
     padding: 20px;
     background-color: var(--color-gray-50);
     border-radius: 20px; 
+}
+.nav-icon{
+    display: flex;
+    align-items: center;
 }
 
 .nav-header{ 
@@ -315,6 +322,9 @@ align-items: center;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+.icon-flex{
+    display: flex;
 }
 
 .nav-user-btn p{
@@ -441,6 +451,12 @@ align-items: center;
     font-weight: 600;
 }
 
+
+.section-main{
+    
+
+}
+
 .main-contant{
     
      display: grid;
@@ -450,9 +466,9 @@ align-items: center;
     margin-top: 1.2rem;
   grid-template-areas: 
     "right-top main main "
-    "right-bottom main main "
     "right-bottom main main "; 
 }
+
 
 
 .activity{
@@ -1188,3 +1204,113 @@ height: 42px;
 }
 
 /* ///////////////////////////// */
+
+/* @media screen and (max-width:1280px) {
+    .title-hide{
+        display: none;
+    }
+    .aside-menu-title{
+        display: none;
+    }
+    aside{
+        padding: calc(var(--spacing)*3);
+        width: 5%;
+    }
+    .aside-logo-media{
+        padding: .6rem;
+        border-radius: 1rem;
+    }
+    .grid-media{
+    
+     display: grid;
+    grid-template-columns:  repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 1.2rem;
+  grid-template-areas: 
+    "right-top center-card-top"
+    "main main"
+    "main main "
+    "right-bottom center-card-bottom"
+    "right-card left-card"
+    ; 
+}
+} */
+ @media screen and (max-width:640px) {
+    aside{
+        display: none;
+    }
+    .aside-title {
+    display: flex;
+    flex-direction: column;
+    padding: 0 .5rem ;
+}
+    .aside-title h1{
+        font-size: 20px;
+    }
+    .aside-title p{
+        font-size: 14px;
+    }   
+    
+    .aside-logo{
+        padding: .6rem;
+    }
+    .nav-user-btn-name{
+        display: none;
+    }
+    .nav-user-btn{
+        width: 4rem;
+    }
+    .nav-top{
+        flex-direction: column;
+        position: relative;
+    }
+    .nav-left{
+       justify-content: space-between;
+    }
+    .online{
+    width: 100%;
+    
+   
+    }
+    .online-text{
+        margin: auto;
+    }
+    .online::before{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 48%;
+        right: 37%;
+    }
+    .nav-header{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    /* ///////////// */
+    .cards-flex{
+        flex-direction: column;
+        width: 100%;
+    }
+    .card{
+        width: 100%;
+        margin-bottom: .7rem;
+    }
+    .main-contant{
+        flex-direction: column;
+        display: flex;
+    }
+    .statement{
+        order: 3;
+    }
+    .cantainer{
+        width: 100%;
+    }
+    .last-action{
+        overflow-y: hidden;
+    }
+    .bottom-section{
+        display: flex;
+        flex-direction: column;
+    }
+ }
